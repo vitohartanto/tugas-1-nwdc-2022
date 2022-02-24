@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Betta Fish - HTML CSS</title>
+    
+        <!-- Import CSS -->
+        <link rel="stylesheet" href="stylesheet.css" />
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100&display=swap" rel="stylesheet">
+        
+        <!--Font Awesome for Responsive-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+    
+      <body>
+          <nav>
+            <div class="merk">
+                <div class="logo">
+                    <a href="index.html"><img src="/image/logo_betta.png" alt="Betta Fish Logo"></a>
+                    <h4><strong>Vito Betta</strong></h4>
+                </div>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul id="list">
+                <li><a href="https://github.com">Home</a></li>
+                <li><a href="#male">Male</a></li>
+                <li><a href="#female">Female</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+                    
+          </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          
+          </nav>
+          <div class="text-box">
+            <h1>Proudly Offering Best Betta Ornamental Fish<br></h1>
+          </div>
+
+          
+          <script type="text/javascript">
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+              navLinks.style.right="0";
+            }
+            function hideMenu(){
+              navLinks.style.right="-200px";
+            }
+        
+        </script>
+
+
+      </body>
+
+
+</html>

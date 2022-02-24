@@ -1,0 +1,130 @@
+*{
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(255, 231, 18,0.7),rgba(252, 65, 3,0.7)), url(image/bettahome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+    float:left;
+    padding: 8px 20px;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover{
+    color:red;
+    transition: 1s;
+}
+
+
+.nav-links{
+    text-align: right;
+}
+
+.merk h4{
+    display: inline-block;
+    position: relative;
+    bottom: 6vh;
+    color: white;
+    margin: 0 15px 0 0;
+    font-weight:bold;
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%)
+    
+}
+
+nav img{
+    width:6em;
+    
+}
+
+img{
+    transition: width 2s;
+}
+
+img:hover{
+    width: 10em;  
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media (max-width: 680px){
+    html, body {
+        overflow-x: hidden;
+      }
+    .nav-links ul li{
+        display:block;
+    }
+       
+  .nav-links{
+    position: absolute;
+    background: orangered;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    right: -200px;
+    transition: 1s;
+  }
+
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links ul{
+    padding: 50px;
+  }
+
+nav .fa-times{
+    z-index: 4;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+}
